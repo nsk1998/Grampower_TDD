@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extentlisteners.TestNGListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testclass.TC_VerifyEnergyTest">
+        <methods>
+          <include name="setup"/>
+          <include name="HandlePopup"/>
+          <include name="tearDown"/>
+          <include name="dashLogin"/>
+          <include name="createObject"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- testclass.TC_VerifyEnergyTest -->
+      <class name="testclass.TC_DashboardPageTest">
+        <methods>
+          <include name="dashLogin"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="createObject"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- testclass.TC_DashboardPageTest -->
+      <class name="testclass.TC_MetercountTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyLogin"/>
+          <include name="verifyMeterCount"/>
+          <include name="HandlePopup"/>
+          <include name="tearDown"/>
+          <include name="createObject"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- testclass.TC_MetercountTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
